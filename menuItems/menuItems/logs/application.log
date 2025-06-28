@@ -1,0 +1,370 @@
+2025-06-09T09:14:17.058+05:30  INFO 9788 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Starting MenuItemsApplication using Java 21.0.5 with PID 9788 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\menuItems\menuItems\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\menuItems\menuItems)
+2025-06-09T09:14:17.215+05:30  INFO 9788 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T09:14:17.389+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T09:14:17.408+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=menuItems, profiles=[default], label=null, version=304a6ae5ffceb600cfe4d66ce473b19f63e5f5b6, state=
+2025-06-09T09:14:17.416+05:30  INFO 9788 --- [menuItems] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-09T09:14:17.417+05:30  INFO 9788 --- [menuItems] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-09T09:14:21.817+05:30  INFO 9788 --- [menuItems] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T09:14:22.361+05:30  INFO 9788 --- [menuItems] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 487 ms. Found 1 JPA repository interface.
+2025-06-09T09:14:23.167+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58e2f515-76ce-3c95-a973-e23a8cd7eda8
+2025-06-09T09:14:25.819+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-09T09:14:25.883+05:30  INFO 9788 --- [menuItems] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T09:14:25.884+05:30  INFO 9788 --- [menuItems] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T09:14:26.076+05:30  INFO 9788 --- [menuItems] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T09:14:26.077+05:30  INFO 9788 --- [menuItems] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8658 ms
+2025-06-09T09:14:27.699+05:30  INFO 9788 --- [menuItems] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T09:14:27.929+05:30  INFO 9788 --- [menuItems] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-09T09:14:28.233+05:30  INFO 9788 --- [menuItems] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T09:14:29.381+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T09:14:29.523+05:30  INFO 9788 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T09:14:30.545+05:30  INFO 9788 --- [menuItems] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a38627c
+2025-06-09T09:14:30.552+05:30  INFO 9788 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T09:14:30.752+05:30  WARN 9788 --- [menuItems] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T09:14:30.819+05:30  INFO 9788 --- [menuItems] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T09:14:33.221+05:30  INFO 9788 --- [menuItems] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T09:14:33.370+05:30  INFO 9788 --- [menuItems] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T09:14:34.772+05:30  WARN 9788 --- [menuItems] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T09:14:37.578+05:30  WARN 9788 --- [menuItems] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T09:14:37.698+05:30  INFO 9788 --- [menuItems] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T09:14:37.900+05:30  WARN 9788 --- [menuItems] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T09:14:37.965+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-09T09:14:38.270+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T09:14:38.409+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T09:14:38.425+05:30  INFO 9788 --- [menuItems] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T09:14:38.471+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T09:14:38.472+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T09:14:38.481+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T09:14:38.483+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T09:14:38.483+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T09:14:38.484+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T09:14:38.484+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T09:14:39.252+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T09:14:39.265+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T09:14:39.279+05:30  INFO 9788 --- [menuItems] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T09:14:39.287+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749440679286 with initial instances count: 2
+2025-06-09T09:14:39.304+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MENUITEMS with eureka with status UP
+2025-06-09T09:14:39.307+05:30  INFO 9788 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749440679306, current=UP, previous=STARTING]
+2025-06-09T09:14:39.312+05:30  INFO 9788 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081: registering service...
+2025-06-09T09:14:39.360+05:30  INFO 9788 --- [menuItems] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-09T09:14:39.363+05:30  INFO 9788 --- [menuItems] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-06-09T09:14:39.404+05:30  INFO 9788 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Started MenuItemsApplication in 26.656 seconds (process running for 29.58)
+2025-06-09T09:14:39.412+05:30  INFO 9788 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081 - registration status: 204
+2025-06-09T09:14:39.644+05:30  INFO 9788 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Menu Items Service started successfully!
+2025-06-09T09:16:15.000+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T09:16:15.001+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T09:16:15.002+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T09:16:15.047+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-1] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T09:16:15.047+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-1] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T09:16:15.247+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T09:16:15.247+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T09:18:53.968+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-4] c.c.p.m.controller.MenuItemController    : Fetching all menu items...
+2025-06-09T09:18:53.969+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-4] c.c.p.m.service.MenuItemServiceImpl      : Fetching all menu items...
+2025-06-09T09:18:53.989+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-4] c.c.p.m.service.MenuItemServiceImpl      : Retrieved 2 menu items.
+2025-06-09T09:18:54.004+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-5] c.c.p.m.controller.MenuItemController    : Fetching all menu items...
+2025-06-09T09:18:54.004+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-5] c.c.p.m.service.MenuItemServiceImpl      : Fetching all menu items...
+2025-06-09T09:18:54.010+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-5] c.c.p.m.service.MenuItemServiceImpl      : Retrieved 2 menu items.
+2025-06-09T09:19:38.505+05:30  INFO 9788 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T09:20:33.572+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-7] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T09:20:33.572+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-7] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T09:20:33.592+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-8] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T09:20:33.593+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-8] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:26.338+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-10] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:26.338+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-10] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:26.363+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-1] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:26.364+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-1] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:37.177+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:37.177+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:37.191+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-3] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:37.192+05:30  INFO 9788 --- [menuItems] [http-nio-8081-exec-3] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T09:24:38.518+05:30  INFO 9788 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T10:57:45.842+05:30  INFO 29292 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Starting MenuItemsApplication using Java 21.0.5 with PID 29292 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\menuItems\menuItems\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\menuItems\menuItems)
+2025-06-09T10:57:45.847+05:30  INFO 29292 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T10:57:45.979+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T10:57:45.980+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=menuItems, profiles=[default], label=null, version=582d89f912a1b5742ba5431ceb7a356b63cdf067, state=
+2025-06-09T10:57:45.993+05:30  INFO 29292 --- [menuItems] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-09T10:57:45.994+05:30  INFO 29292 --- [menuItems] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-09T10:57:48.797+05:30  INFO 29292 --- [menuItems] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T10:57:49.041+05:30  INFO 29292 --- [menuItems] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 216 ms. Found 1 JPA repository interface.
+2025-06-09T10:57:49.495+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58e2f515-76ce-3c95-a973-e23a8cd7eda8
+2025-06-09T10:57:51.124+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-09T10:57:51.158+05:30  INFO 29292 --- [menuItems] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T10:57:51.159+05:30  INFO 29292 --- [menuItems] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T10:57:51.258+05:30  INFO 29292 --- [menuItems] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T10:57:51.259+05:30  INFO 29292 --- [menuItems] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5263 ms
+2025-06-09T10:57:52.230+05:30  INFO 29292 --- [menuItems] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T10:57:52.358+05:30  INFO 29292 --- [menuItems] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-09T10:57:52.437+05:30  INFO 29292 --- [menuItems] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T10:57:52.915+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T10:57:52.960+05:30  INFO 29292 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T10:57:53.647+05:30  INFO 29292 --- [menuItems] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@78dcac11
+2025-06-09T10:57:53.652+05:30  INFO 29292 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T10:57:53.802+05:30  WARN 29292 --- [menuItems] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T10:57:53.848+05:30  INFO 29292 --- [menuItems] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T10:57:55.520+05:30  INFO 29292 --- [menuItems] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T10:57:55.660+05:30  INFO 29292 --- [menuItems] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T10:57:56.540+05:30  WARN 29292 --- [menuItems] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T10:57:58.865+05:30  WARN 29292 --- [menuItems] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T10:57:58.950+05:30  INFO 29292 --- [menuItems] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T10:57:59.102+05:30  WARN 29292 --- [menuItems] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T10:57:59.132+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-09T10:57:59.334+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T10:57:59.399+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T10:57:59.409+05:30  INFO 29292 --- [menuItems] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T10:57:59.431+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T10:57:59.432+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T10:57:59.432+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T10:57:59.432+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T10:57:59.433+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T10:57:59.433+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T10:57:59.434+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T10:58:00.015+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T10:58:00.019+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T10:58:00.023+05:30  INFO 29292 --- [menuItems] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T10:58:00.026+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749446880026 with initial instances count: 1
+2025-06-09T10:58:00.042+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MENUITEMS with eureka with status UP
+2025-06-09T10:58:00.043+05:30  INFO 29292 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749446880043, current=UP, previous=STARTING]
+2025-06-09T10:58:00.047+05:30  INFO 29292 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081: registering service...
+2025-06-09T10:58:00.086+05:30  INFO 29292 --- [menuItems] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-09T10:58:00.088+05:30  INFO 29292 --- [menuItems] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-06-09T10:58:00.119+05:30  INFO 29292 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Started MenuItemsApplication in 17.215 seconds (process running for 18.347)
+2025-06-09T10:58:00.127+05:30  INFO 29292 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081 - registration status: 204
+2025-06-09T10:58:00.324+05:30  INFO 29292 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Menu Items Service started successfully!
+2025-06-09T11:02:59.441+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T11:07:59.449+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T11:47:35.480+05:30  WARN 29292 --- [menuItems] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=38m50s680ms203µs700ns).
+2025-06-09T11:51:10.957+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T11:56:10.963+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:01:10.965+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:06:01.146+05:30  WARN 29292 --- [menuItems] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m54s235ms82µs400ns).
+2025-06-09T12:08:36.219+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:13:36.236+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:23:45.508+05:30  WARN 29292 --- [menuItems] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m14s258ms366µs700ns).
+2025-06-09T12:27:20.504+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:32:20.506+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:37:20.513+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:42:20.514+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:47:20.521+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:01:09.380+05:30  WARN 29292 --- [menuItems] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m23s503ms599µs800ns).
+2025-06-09T14:02:14.019+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:07:14.032+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:12:14.037+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:17:14.043+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:22:14.052+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:27:14.053+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:32:14.056+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:37:14.069+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:39:02.936+05:30  INFO 25680 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Starting MenuItemsApplication using Java 21.0.5 with PID 25680 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\menuItems\menuItems\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\menuItems\menuItems)
+2025-06-09T14:39:02.942+05:30  INFO 25680 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T14:39:03.024+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T14:39:03.025+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=menuItems, profiles=[default], label=null, version=c81f6bde933fdfde4ba433f60022f56113bf7d25, state=
+2025-06-09T14:39:03.027+05:30  INFO 25680 --- [menuItems] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-09T14:39:03.028+05:30  INFO 25680 --- [menuItems] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-09T14:39:05.050+05:30  INFO 25680 --- [menuItems] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T14:39:05.330+05:30  INFO 25680 --- [menuItems] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 261 ms. Found 1 JPA repository interface.
+2025-06-09T14:39:05.612+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58e2f515-76ce-3c95-a973-e23a8cd7eda8
+2025-06-09T14:39:06.655+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-09T14:39:06.675+05:30  INFO 25680 --- [menuItems] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T14:39:06.676+05:30  INFO 25680 --- [menuItems] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T14:39:06.729+05:30  INFO 25680 --- [menuItems] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T14:39:06.729+05:30  INFO 25680 --- [menuItems] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3700 ms
+2025-06-09T14:39:07.242+05:30  INFO 25680 --- [menuItems] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T14:39:07.375+05:30  INFO 25680 --- [menuItems] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-09T14:39:07.442+05:30  INFO 25680 --- [menuItems] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T14:39:07.720+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T14:39:07.761+05:30  INFO 25680 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T14:39:08.117+05:30  INFO 25680 --- [menuItems] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@319e29a5
+2025-06-09T14:39:08.119+05:30  INFO 25680 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T14:39:08.174+05:30  WARN 25680 --- [menuItems] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T14:39:08.196+05:30  INFO 25680 --- [menuItems] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T14:39:08.987+05:30  INFO 25680 --- [menuItems] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T14:39:09.041+05:30  INFO 25680 --- [menuItems] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T14:39:09.547+05:30  WARN 25680 --- [menuItems] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T14:39:11.010+05:30  WARN 25680 --- [menuItems] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T14:39:11.044+05:30  INFO 25680 --- [menuItems] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T14:39:11.109+05:30  WARN 25680 --- [menuItems] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T14:39:11.126+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-09T14:39:11.236+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T14:39:11.285+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T14:39:11.292+05:30  INFO 25680 --- [menuItems] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:39:11.308+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T14:39:11.308+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T14:39:11.308+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T14:39:11.309+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T14:39:11.309+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T14:39:11.309+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T14:39:11.309+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T14:39:11.681+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T14:39:11.685+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T14:39:11.688+05:30  INFO 25680 --- [menuItems] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T14:39:11.689+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749460151689 with initial instances count: 7
+2025-06-09T14:39:11.698+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MENUITEMS with eureka with status UP
+2025-06-09T14:39:11.699+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749460151699, current=UP, previous=STARTING]
+2025-06-09T14:39:11.701+05:30  INFO 25680 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081: registering service...
+2025-06-09T14:39:11.709+05:30  INFO 25680 --- [menuItems] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application MENUITEMS with eureka with status DOWN
+2025-06-09T14:39:11.710+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749460151710, current=DOWN, previous=UP]
+2025-06-09T14:39:11.711+05:30  WARN 25680 --- [menuItems] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-09T14:39:11.715+05:30  INFO 25680 --- [menuItems] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T14:39:11.722+05:30  INFO 25680 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T14:39:11.736+05:30  INFO 25680 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T14:39:11.737+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T14:39:11.753+05:30  INFO 25680 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081 - registration status: 204
+2025-06-09T14:39:11.753+05:30  INFO 25680 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081: registering service...
+2025-06-09T14:39:11.758+05:30  INFO 25680 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081 - registration status: 204
+2025-06-09T14:39:11.759+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T14:39:11.812+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081 - deregister  status: 200
+2025-06-09T14:39:11.813+05:30  INFO 25680 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T14:39:11.833+05:30  INFO 25680 --- [menuItems] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-09T14:39:11.865+05:30 ERROR 25680 --- [menuItems] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-06-09T14:39:19.910+05:30  INFO 29292 --- [menuItems] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081 - Re-registering apps/MENUITEMS
+2025-06-09T14:39:19.910+05:30  INFO 29292 --- [menuItems] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081: registering service...
+2025-06-09T14:39:19.926+05:30  INFO 29292 --- [menuItems] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081 - registration status: 204
+2025-06-09T14:42:14.079+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:47:14.092+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:52:14.099+05:30  INFO 29292 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:00:30.130+05:30  INFO 19924 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Starting MenuItemsApplication using Java 21.0.5 with PID 19924 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\menuItems\menuItems\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\menuItems\menuItems)
+2025-06-09T15:00:30.131+05:30  INFO 19924 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:00:30.188+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:00:30.190+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=menuItems, profiles=[default], label=null, version=aa99beff08bc4f52001d9574069aecf81fa9dfcb, state=
+2025-06-09T15:00:30.194+05:30  INFO 19924 --- [menuItems] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-09T15:00:30.195+05:30  INFO 19924 --- [menuItems] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-09T15:00:31.476+05:30  INFO 19924 --- [menuItems] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:00:31.595+05:30  INFO 19924 --- [menuItems] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 1 JPA repository interface.
+2025-06-09T15:00:31.832+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=58e2f515-76ce-3c95-a973-e23a8cd7eda8
+2025-06-09T15:00:32.692+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-06-09T15:00:32.705+05:30  INFO 19924 --- [menuItems] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:00:32.706+05:30  INFO 19924 --- [menuItems] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:00:32.760+05:30  INFO 19924 --- [menuItems] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:00:32.760+05:30  INFO 19924 --- [menuItems] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2564 ms
+2025-06-09T15:00:33.260+05:30  INFO 19924 --- [menuItems] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:00:33.334+05:30  INFO 19924 --- [menuItems] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-09T15:00:33.376+05:30  INFO 19924 --- [menuItems] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:00:33.596+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:00:33.623+05:30  INFO 19924 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T15:00:33.958+05:30  INFO 19924 --- [menuItems] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@b08abf0
+2025-06-09T15:00:33.961+05:30  INFO 19924 --- [menuItems] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T15:00:34.007+05:30  WARN 19924 --- [menuItems] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:00:34.022+05:30  INFO 19924 --- [menuItems] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:00:34.772+05:30  INFO 19924 --- [menuItems] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:00:34.823+05:30  INFO 19924 --- [menuItems] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:00:35.359+05:30  WARN 19924 --- [menuItems] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:00:36.612+05:30  WARN 19924 --- [menuItems] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:00:36.656+05:30  INFO 19924 --- [menuItems] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:00:36.714+05:30  WARN 19924 --- [menuItems] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:00:36.733+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 18 endpoints beneath base path '/actuator'
+2025-06-09T15:00:36.837+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:00:36.872+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:00:36.877+05:30  INFO 19924 --- [menuItems] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:00:36.890+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:00:36.890+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:00:36.891+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:00:36.891+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:00:36.891+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:00:36.891+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:00:36.891+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:00:37.149+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:00:37.151+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:00:37.154+05:30  INFO 19924 --- [menuItems] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:00:37.155+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749461437155 with initial instances count: 3
+2025-06-09T15:00:37.160+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MENUITEMS with eureka with status UP
+2025-06-09T15:00:37.162+05:30  INFO 19924 --- [menuItems] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749461437162, current=UP, previous=STARTING]
+2025-06-09T15:00:37.165+05:30  INFO 19924 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081: registering service...
+2025-06-09T15:00:37.195+05:30  INFO 19924 --- [menuItems] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-06-09T15:00:37.196+05:30  INFO 19924 --- [menuItems] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-06-09T15:00:37.209+05:30  INFO 19924 --- [menuItems] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MENUITEMS/LTIN603865.cts.com:menuItems:8081 - registration status: 204
+2025-06-09T15:00:37.215+05:30  INFO 19924 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Started MenuItemsApplication in 10.114 seconds (process running for 10.811)
+2025-06-09T15:00:37.329+05:30  INFO 19924 --- [menuItems] [restartedMain] c.c.p.menuItems.MenuItemsApplication     : Menu Items Service started successfully!
+2025-06-09T15:01:12.241+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T15:01:12.241+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T15:01:12.242+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T15:01:12.291+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-1] c.c.p.m.controller.MenuItemController    : Adding new menu item: MenuItems(itemID=null, name=Chicken Nuggets, description=Nuggets, price=99.0, restaurantID=1)
+2025-06-09T15:01:12.292+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-1] c.c.p.m.service.MenuItemServiceImpl      : Adding new menu item: MenuItems(itemID=null, name=Chicken Nuggets, description=Nuggets, price=99.0, restaurantID=1)
+2025-06-09T15:01:12.415+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.controller.MenuItemController    : Fetching all menu items...
+2025-06-09T15:01:12.415+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.service.MenuItemServiceImpl      : Fetching all menu items...
+2025-06-09T15:01:12.493+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.service.MenuItemServiceImpl      : Retrieved 1 menu items.
+2025-06-09T15:01:30.247+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-3] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:01:30.247+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-3] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:01:30.289+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-5] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:01:30.289+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-5] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:01:37.217+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-4] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:01:37.217+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-4] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:01:37.237+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-6] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:01:37.237+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-6] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:02:05.922+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-7] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:02:05.922+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-7] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:02:05.938+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-9] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:02:05.938+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-9] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:02:16.459+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-10] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:02:16.459+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-10] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:02:16.479+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-8] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:02:16.479+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-8] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:05:36.898+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:10:36.904+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:15:36.908+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:17:09.250+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:17:09.250+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-2] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:17:09.267+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-3] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:17:09.267+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-3] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:20:36.929+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:23:12.312+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-4] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:23:12.312+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-4] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:23:12.329+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-6] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:23:12.329+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-6] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:25:36.934+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:30:36.945+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:35:36.958+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:40:36.962+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:45:36.977+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:50:36.984+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:55:36.999+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:56:26.002+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-9] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:56:26.002+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-9] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:56:26.020+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-10] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:56:26.020+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-10] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:56:45.178+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-8] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:56:45.178+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-8] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T15:56:45.197+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-1] c.c.p.m.controller.MenuItemController    : Fetching menu items for restaurant ID: 1
+2025-06-09T15:56:45.197+05:30  INFO 19924 --- [menuItems] [http-nio-8081-exec-1] c.c.p.m.service.MenuItemServiceImpl      : Fetching menu items for restaurant ID: 1
+2025-06-09T16:00:37.007+05:30  INFO 19924 --- [menuItems] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration

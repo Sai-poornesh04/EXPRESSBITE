@@ -1,0 +1,840 @@
+2025-06-09T09:14:22.926+05:30  INFO 23680 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 23680 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T09:14:23.043+05:30  INFO 23680 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T09:14:23.237+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T09:14:23.242+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=304a6ae5ffceb600cfe4d66ce473b19f63e5f5b6, state=
+2025-06-09T09:14:23.256+05:30  INFO 23680 --- [orderMgt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-09T09:14:23.257+05:30  INFO 23680 --- [orderMgt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-09T09:14:26.574+05:30  INFO 23680 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T09:14:27.080+05:30  INFO 23680 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 465 ms. Found 1 JPA repository interface.
+2025-06-09T09:14:27.788+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T09:14:30.288+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T09:14:30.335+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T09:14:30.337+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T09:14:30.566+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T09:14:30.567+05:30  INFO 23680 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7302 ms
+2025-06-09T09:14:31.320+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T09:14:31.494+05:30  INFO 23680 --- [orderMgt] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-09T09:14:31.601+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T09:14:32.320+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T09:14:32.423+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T09:14:33.283+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@73d7daa4
+2025-06-09T09:14:33.289+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T09:14:33.432+05:30  WARN 23680 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T09:14:33.498+05:30  INFO 23680 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T09:14:36.326+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T09:14:36.477+05:30  INFO 23680 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T09:14:37.613+05:30  WARN 23680 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T09:14:37.681+05:30  WARN 23680 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T09:14:38.281+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T09:14:39.860+05:30  INFO 23680 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T09:14:39.939+05:30  WARN 23680 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T09:14:40.017+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T09:14:40.097+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T09:14:40.106+05:30  INFO 23680 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T09:14:40.133+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T09:14:40.134+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T09:14:40.134+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T09:14:40.134+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T09:14:40.135+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T09:14:40.135+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T09:14:40.135+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T09:14:40.683+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T09:14:40.688+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T09:14:40.694+05:30  INFO 23680 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T09:14:40.698+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749440680697 with initial instances count: 2
+2025-06-09T09:14:40.706+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T09:14:40.709+05:30  INFO 23680 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749440680709, current=UP, previous=STARTING]
+2025-06-09T09:14:40.712+05:30  INFO 23680 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T09:14:40.769+05:30  INFO 23680 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T09:14:40.773+05:30  INFO 23680 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T09:14:40.820+05:30  INFO 23680 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 23.018 seconds (process running for 25.666)
+2025-06-09T09:14:40.834+05:30  INFO 23680 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T09:14:40.850+05:30  INFO 23680 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T09:16:34.048+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T09:16:34.048+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T09:16:34.049+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T09:16:34.175+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-3] c.f.orderMgt.controller.OrderController  : Placing an order directly: Orders(orderId=null, restaurantID=1, status=PENDING, totalAmount=228.0, email=viswanath@gmail.com)
+2025-06-09T09:16:34.299+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-3] c.f.orderMgt.service.OrderServiceImpl    : Order placed successfully with ID: 3
+2025-06-09T09:16:41.408+05:30  INFO 23680 --- [orderMgt] [scheduling-1] c.f.orderMgt.service.OrderServiceImpl    : Order ID: 3 status updated to DELIVERED
+2025-06-09T09:19:40.145+05:30  INFO 23680 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T09:20:46.901+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-3] c.f.orderMgt.controller.OrderController  : Placing an order directly: Orders(orderId=null, restaurantID=1, status=PENDING, totalAmount=228.0, email=mani@gmail.com)
+2025-06-09T09:20:46.928+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-3] c.f.orderMgt.service.OrderServiceImpl    : Order placed successfully with ID: 4
+2025-06-09T09:21:11.539+05:30  INFO 23680 --- [orderMgt] [scheduling-1] c.f.orderMgt.service.OrderServiceImpl    : Order ID: 4 status updated to DELIVERED
+2025-06-09T09:24:40.159+05:30  INFO 23680 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T09:24:56.577+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-2] c.f.orderMgt.controller.OrderController  : Placing an order directly: Orders(orderId=null, restaurantID=1, status=PENDING, totalAmount=129.0, email=mani@gmail.com)
+2025-06-09T09:24:56.590+05:30  INFO 23680 --- [orderMgt] [http-nio-8083-exec-2] c.f.orderMgt.service.OrderServiceImpl    : Order placed successfully with ID: 5
+2025-06-09T09:25:11.643+05:30  INFO 23680 --- [orderMgt] [scheduling-1] c.f.orderMgt.service.OrderServiceImpl    : Order ID: 5 status updated to DELIVERED
+2025-06-09T10:57:53.435+05:30  INFO 20160 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 20160 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T10:57:53.452+05:30  INFO 20160 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T10:57:53.602+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T10:57:53.604+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=582d89f912a1b5742ba5431ceb7a356b63cdf067, state=
+2025-06-09T10:57:53.612+05:30  INFO 20160 --- [orderMgt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-09T10:57:53.612+05:30  INFO 20160 --- [orderMgt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-09T10:57:55.850+05:30  INFO 20160 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T10:57:56.192+05:30  INFO 20160 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 318 ms. Found 1 JPA repository interface.
+2025-06-09T10:57:56.853+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T10:57:58.208+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T10:57:58.248+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T10:57:58.249+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T10:57:58.430+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T10:57:58.431+05:30  INFO 20160 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4817 ms
+2025-06-09T10:57:58.825+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T10:57:58.975+05:30  INFO 20160 --- [orderMgt] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-09T10:57:59.076+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T10:57:59.838+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T10:57:59.918+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T10:58:00.698+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@67ca55d
+2025-06-09T10:58:00.704+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T10:58:00.821+05:30  WARN 20160 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T10:58:00.876+05:30  INFO 20160 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T10:58:02.286+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T10:58:02.418+05:30  INFO 20160 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T10:58:03.485+05:30  WARN 20160 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T10:58:03.534+05:30  WARN 20160 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T10:58:03.922+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T10:58:05.304+05:30  INFO 20160 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T10:58:05.390+05:30  WARN 20160 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T10:58:05.460+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T10:58:05.546+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T10:58:05.561+05:30  INFO 20160 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T10:58:05.589+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T10:58:05.590+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T10:58:05.590+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T10:58:05.590+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T10:58:05.591+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T10:58:05.591+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T10:58:05.592+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T10:58:06.228+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T10:58:06.234+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T10:58:06.239+05:30  INFO 20160 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T10:58:06.243+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749446886243 with initial instances count: 3
+2025-06-09T10:58:06.253+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T10:58:06.256+05:30  INFO 20160 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749446886256, current=UP, previous=STARTING]
+2025-06-09T10:58:06.260+05:30  INFO 20160 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T10:58:06.309+05:30  INFO 20160 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T10:58:06.311+05:30  INFO 20160 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T10:58:06.355+05:30  INFO 20160 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 15.55 seconds (process running for 17.017)
+2025-06-09T10:58:06.367+05:30  INFO 20160 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T10:58:06.369+05:30  INFO 20160 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T11:03:05.596+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T11:08:05.605+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T11:21:15.591+05:30  WARN 20160 --- [orderMgt] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m44s633ms961µs900ns).
+2025-06-09T11:47:42.476+05:30  WARN 20160 --- [orderMgt] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m36s54ms16µs200ns).
+2025-06-09T11:51:17.117+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T11:56:17.121+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:01:17.135+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:06:08.043+05:30  WARN 20160 --- [orderMgt] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m54s226ms639µs400ns).
+2025-06-09T12:08:42.384+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:13:42.387+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:23:22.448+05:30  WARN 20160 --- [orderMgt] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m14s269ms295µs300ns).
+2025-06-09T12:27:26.648+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:32:26.664+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:37:26.671+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:42:26.685+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T12:47:26.697+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:01:16.412+05:30  WARN 20160 --- [orderMgt] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h10m23s509ms938µs700ns).
+2025-06-09T14:02:20.209+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:07:20.218+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:12:20.232+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:17:20.248+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:22:20.258+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:27:20.268+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:32:20.281+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:37:20.295+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:39:07.627+05:30  INFO 10548 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 10548 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T14:39:07.630+05:30  INFO 10548 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T14:39:07.696+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T14:39:07.696+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=c81f6bde933fdfde4ba433f60022f56113bf7d25, state=
+2025-06-09T14:39:07.699+05:30  INFO 10548 --- [orderMgt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-09T14:39:07.699+05:30  INFO 10548 --- [orderMgt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-09T14:39:08.844+05:30  INFO 10548 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T14:39:08.972+05:30  INFO 10548 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 1 JPA repository interface.
+2025-06-09T14:39:09.314+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T14:39:10.110+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T14:39:10.133+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T14:39:10.134+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T14:39:10.253+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T14:39:10.254+05:30  INFO 10548 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2554 ms
+2025-06-09T14:39:10.506+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T14:39:10.603+05:30  INFO 10548 --- [orderMgt] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-09T14:39:10.665+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T14:39:11.031+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T14:39:11.080+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T14:39:11.506+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1081471a
+2025-06-09T14:39:11.509+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T14:39:11.597+05:30  WARN 10548 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T14:39:11.627+05:30  INFO 10548 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T14:39:12.551+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T14:39:12.624+05:30  INFO 10548 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T14:39:13.049+05:30  WARN 10548 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T14:39:13.088+05:30  WARN 10548 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T14:39:13.250+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T14:39:13.869+05:30  INFO 10548 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T14:39:13.910+05:30  WARN 10548 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T14:39:13.951+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T14:39:13.998+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T14:39:14.008+05:30  INFO 10548 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:39:14.026+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T14:39:14.026+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T14:39:14.026+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T14:39:14.026+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T14:39:14.026+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T14:39:14.027+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T14:39:14.027+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T14:39:14.329+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T14:39:14.336+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T14:39:14.340+05:30  INFO 10548 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T14:39:14.342+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749460154342 with initial instances count: 7
+2025-06-09T14:39:14.351+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T14:39:14.352+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749460154352, current=UP, previous=STARTING]
+2025-06-09T14:39:14.354+05:30  INFO 10548 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T14:39:14.361+05:30  INFO 10548 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERMGT with eureka with status DOWN
+2025-06-09T14:39:14.363+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749460154363, current=DOWN, previous=UP]
+2025-06-09T14:39:14.364+05:30  WARN 10548 --- [orderMgt] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-06-09T14:39:14.377+05:30  INFO 10548 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T14:39:14.385+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T14:39:14.402+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T14:39:14.403+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T14:39:14.431+05:30  INFO 10548 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T14:39:14.432+05:30  INFO 10548 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T14:39:14.438+05:30  INFO 10548 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T14:39:14.439+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T14:39:14.445+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - deregister  status: 200
+2025-06-09T14:39:14.446+05:30  INFO 10548 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T14:39:14.465+05:30  INFO 10548 --- [orderMgt] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-06-09T14:39:14.498+05:30 ERROR 10548 --- [orderMgt] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2025-06-09T14:39:26.062+05:30  INFO 20160 --- [orderMgt] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - Re-registering apps/ORDERMGT
+2025-06-09T14:39:26.063+05:30  INFO 20160 --- [orderMgt] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T14:39:26.074+05:30  INFO 20160 --- [orderMgt] [DiscoveryClient-HeartbeatExecutor-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T14:42:20.302+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:47:20.310+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T14:52:20.325+05:30  INFO 20160 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:00:38.205+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 2552 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T15:00:38.208+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:00:38.274+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:00:38.274+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=aa99beff08bc4f52001d9574069aecf81fa9dfcb, state=
+2025-06-09T15:00:38.278+05:30  INFO 2552 --- [orderMgt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-06-09T15:00:38.278+05:30  INFO 2552 --- [orderMgt] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-06-09T15:00:39.938+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:00:40.074+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127 ms. Found 1 JPA repository interface.
+2025-06-09T15:00:40.323+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T15:00:40.968+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T15:00:40.980+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:00:40.980+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:00:41.053+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:00:41.055+05:30  INFO 2552 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2776 ms
+2025-06-09T15:00:41.252+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:00:41.328+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-06-09T15:00:41.373+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:00:41.629+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:00:41.655+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-09T15:00:41.998+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21bf2561
+2025-06-09T15:00:42.001+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-09T15:00:42.083+05:30  WARN 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:00:42.105+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:00:42.796+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:00:42.870+05:30  INFO 2552 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:00:43.384+05:30  WARN 2552 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:00:43.419+05:30  WARN 2552 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:00:43.624+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T15:00:44.313+05:30  INFO 2552 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:00:44.359+05:30  WARN 2552 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:00:44.397+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:00:44.430+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:00:44.437+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:00:44.451+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:00:44.451+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:00:44.451+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:00:44.451+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:00:44.451+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:00:44.451+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:00:44.452+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:00:44.697+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:00:44.700+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:00:44.703+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:00:44.705+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749461444705 with initial instances count: 3
+2025-06-09T15:00:44.708+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T15:00:44.709+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749461444709, current=UP, previous=STARTING]
+2025-06-09T15:00:44.711+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:00:44.728+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T15:00:44.728+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T15:00:44.743+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 8.697 seconds (process running for 9.65)
+2025-06-09T15:00:44.749+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T15:00:44.756+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:01:17.704+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T15:01:17.704+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T15:01:17.705+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T15:02:34.256+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-7] c.f.orderMgt.controller.OrderController  : Placing an order directly: Orders(orderId=null, restaurantID=1, status=PENDING, totalAmount=99.0, email=dhoni@gmail.com)
+2025-06-09T15:02:34.326+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-7] c.f.orderMgt.service.OrderServiceImpl    : Order placed successfully with ID: 1
+2025-06-09T15:02:44.952+05:30  INFO 2552 --- [orderMgt] [scheduling-1] c.f.orderMgt.service.OrderServiceImpl    : Order ID: 1 status updated to DELIVERED
+2025-06-09T15:05:44.462+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:10:44.467+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:15:44.473+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:17:33.619+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-4] c.f.orderMgt.controller.OrderController  : Placing an order directly: Orders(orderId=null, restaurantID=1, status=PENDING, totalAmount=297.0, email=dhoni@gmail.com)
+2025-06-09T15:17:33.629+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-4] c.f.orderMgt.service.OrderServiceImpl    : Order placed successfully with ID: 2
+2025-06-09T15:17:45.286+05:30  INFO 2552 --- [orderMgt] [scheduling-1] c.f.orderMgt.service.OrderServiceImpl    : Order ID: 2 status updated to DELIVERED
+2025-06-09T15:20:44.477+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:23:21.219+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] c.f.orderMgt.controller.OrderController  : Placing an order directly: Orders(orderId=null, restaurantID=1, status=PENDING, totalAmount=198.0, email=dhoni@gmail.com)
+2025-06-09T15:23:21.267+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] c.f.orderMgt.service.OrderServiceImpl    : Order placed successfully with ID: 3
+2025-06-09T15:23:45.415+05:30  INFO 2552 --- [orderMgt] [scheduling-1] c.f.orderMgt.service.OrderServiceImpl    : Order ID: 3 status updated to DELIVERED
+2025-06-09T15:25:44.493+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:26:44.449+05:30  INFO 2552 --- [orderMgt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 4 class path changes (0 additions, 0 deletions, 4 modifications)
+2025-06-09T15:26:44.451+05:30  INFO 2552 --- [orderMgt] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERMGT with eureka with status DOWN
+2025-06-09T15:26:44.451+05:30  INFO 2552 --- [orderMgt] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749463004451, current=DOWN, previous=UP]
+2025-06-09T15:26:44.451+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:26:44.456+05:30  INFO 2552 --- [orderMgt] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:26:44.461+05:30  INFO 2552 --- [orderMgt] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:26:44.464+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:26:44.473+05:30  INFO 2552 --- [orderMgt] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:26:44.479+05:30  INFO 2552 --- [orderMgt] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-06-09T15:26:44.486+05:30  INFO 2552 --- [orderMgt] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-06-09T15:26:44.487+05:30  INFO 2552 --- [orderMgt] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T15:26:47.489+05:30  WARN 2552 --- [orderMgt] [DiscoveryClient-%d] c.netflix.discovery.TimedSupervisorTask  : task supervisor shutting down, can't accept the task
+2025-06-09T15:26:47.489+05:30  INFO 2552 --- [orderMgt] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T15:26:47.494+05:30  INFO 2552 --- [orderMgt] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - deregister  status: 200
+2025-06-09T15:26:47.494+05:30  INFO 2552 --- [orderMgt] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T15:26:47.574+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting Order Management Service...
+2025-06-09T15:26:49.218+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 2552 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T15:26:49.218+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:26:49.220+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:26:49.221+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=4cf4b635cc2335695573287755b9502c76dd8a7e, state=
+2025-06-09T15:26:49.506+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:26:49.519+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interface.
+2025-06-09T15:26:49.606+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T15:26:49.670+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T15:26:49.671+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:26:49.671+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:26:49.704+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:26:49.705+05:30  INFO 2552 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 484 ms
+2025-06-09T15:26:49.733+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:26:49.736+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:26:49.750+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:26:49.751+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-06-09T15:26:49.764+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@358eb9f3
+2025-06-09T15:26:49.764+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-06-09T15:26:49.767+05:30  WARN 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:26:49.768+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:26:49.804+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:26:49.819+05:30  INFO 2552 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:26:49.879+05:30  WARN 2552 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:26:49.886+05:30  WARN 2552 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:26:49.913+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T15:26:50.020+05:30  INFO 2552 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:26:50.031+05:30  WARN 2552 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:26:50.038+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:26:50.040+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:26:50.040+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:26:50.040+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:26:50.041+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:26:50.041+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:26:50.041+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:26:50.041+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:26:50.041+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:26:50.041+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:26:50.060+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:26:50.061+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:26:50.061+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:26:50.062+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749463010062 with initial instances count: 7
+2025-06-09T15:26:50.065+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T15:26:50.065+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749463010065, current=UP, previous=STARTING]
+2025-06-09T15:26:50.066+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:26:50.069+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T15:26:50.070+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T15:26:50.077+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 2.502 seconds (process running for 1574.983)
+2025-06-09T15:26:50.078+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:26:50.080+05:30  INFO 2552 --- [orderMgt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-09T15:26:50.080+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T15:31:50.048+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:36:50.061+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:41:50.074+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:46:50.086+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:48:06.986+05:30  INFO 2552 --- [orderMgt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-09T15:48:06.988+05:30  INFO 2552 --- [orderMgt] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERMGT with eureka with status DOWN
+2025-06-09T15:48:06.988+05:30  INFO 2552 --- [orderMgt] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464286988, current=DOWN, previous=UP]
+2025-06-09T15:48:06.988+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:48:06.989+05:30  INFO 2552 --- [orderMgt] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:48:06.996+05:30  INFO 2552 --- [orderMgt] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:48:07.001+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:48:07.004+05:30  INFO 2552 --- [orderMgt] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:48:07.005+05:30  INFO 2552 --- [orderMgt] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-06-09T15:48:07.014+05:30  INFO 2552 --- [orderMgt] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-06-09T15:48:07.015+05:30  INFO 2552 --- [orderMgt] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T15:48:10.021+05:30  INFO 2552 --- [orderMgt] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T15:48:10.042+05:30  INFO 2552 --- [orderMgt] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - deregister  status: 200
+2025-06-09T15:48:10.042+05:30  INFO 2552 --- [orderMgt] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T15:48:10.129+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting Order Management Service...
+2025-06-09T15:48:10.938+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 2552 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T15:48:10.940+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:48:10.942+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:48:10.942+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=4cf4b635cc2335695573287755b9502c76dd8a7e, state=
+2025-06-09T15:48:11.255+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:48:11.265+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-06-09T15:48:11.323+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T15:48:11.387+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T15:48:11.389+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:48:11.389+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:48:11.449+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:48:11.449+05:30  INFO 2552 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 507 ms
+2025-06-09T15:48:11.472+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:48:11.474+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:48:11.481+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:48:11.482+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-06-09T15:48:11.495+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@261f7584
+2025-06-09T15:48:11.495+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-06-09T15:48:11.496+05:30  WARN 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:48:11.496+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:48:11.531+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:48:11.549+05:30  INFO 2552 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:48:11.597+05:30  WARN 2552 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:48:11.602+05:30  WARN 2552 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:48:11.622+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T15:48:11.697+05:30  INFO 2552 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:48:11.703+05:30  WARN 2552 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:48:11.710+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:48:11.711+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:48:11.711+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:48:11.711+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:48:11.711+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:48:11.711+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:48:11.711+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:48:11.711+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:48:11.711+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:48:11.712+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:48:11.727+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:48:11.728+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:48:11.728+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:48:11.728+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749464291728 with initial instances count: 7
+2025-06-09T15:48:11.729+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T15:48:11.729+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464291729, current=UP, previous=STARTING]
+2025-06-09T15:48:11.730+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:48:11.732+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T15:48:11.732+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T15:48:11.737+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 1.602 seconds (process running for 2856.643)
+2025-06-09T15:48:11.738+05:30  INFO 2552 --- [orderMgt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-09T15:48:11.738+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T15:48:11.741+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:48:31.584+05:30  INFO 2552 --- [orderMgt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-09T15:48:31.585+05:30  INFO 2552 --- [orderMgt] [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERMGT with eureka with status DOWN
+2025-06-09T15:48:31.585+05:30  INFO 2552 --- [orderMgt] [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464311585, current=DOWN, previous=UP]
+2025-06-09T15:48:31.585+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:48:31.586+05:30  INFO 2552 --- [orderMgt] [Thread-13] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:48:31.591+05:30  INFO 2552 --- [orderMgt] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:48:31.593+05:30  INFO 2552 --- [orderMgt] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:48:31.594+05:30  INFO 2552 --- [orderMgt] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-06-09T15:48:31.598+05:30  INFO 2552 --- [orderMgt] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-06-09T15:48:31.598+05:30  INFO 2552 --- [orderMgt] [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T15:48:31.600+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:48:31.603+05:30  INFO 2552 --- [orderMgt] [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T15:48:31.605+05:30  INFO 2552 --- [orderMgt] [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - deregister  status: 200
+2025-06-09T15:48:31.606+05:30  INFO 2552 --- [orderMgt] [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T15:48:31.644+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting Order Management Service...
+2025-06-09T15:48:32.426+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 2552 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T15:48:32.427+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:48:32.429+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:48:32.429+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=4cf4b635cc2335695573287755b9502c76dd8a7e, state=
+2025-06-09T15:48:32.582+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:48:32.594+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interface.
+2025-06-09T15:48:32.652+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T15:48:32.702+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T15:48:32.703+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:48:32.704+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:48:32.747+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:48:32.747+05:30  INFO 2552 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 318 ms
+2025-06-09T15:48:32.765+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:48:32.766+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:48:32.771+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:48:32.772+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-06-09T15:48:32.780+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@c0b513
+2025-06-09T15:48:32.780+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-06-09T15:48:32.782+05:30  WARN 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:48:32.782+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:48:32.810+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:48:32.822+05:30  INFO 2552 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:48:32.865+05:30  WARN 2552 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:48:32.867+05:30  WARN 2552 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:48:32.883+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T15:48:32.965+05:30  INFO 2552 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:48:32.972+05:30  WARN 2552 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:48:32.977+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:48:32.979+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:48:32.979+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:48:32.979+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:48:32.979+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:48:32.979+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:48:32.980+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:48:32.980+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:48:32.980+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:48:32.980+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:48:32.998+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:48:32.999+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:48:32.999+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:48:33.000+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749464313000 with initial instances count: 7
+2025-06-09T15:48:33.001+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T15:48:33.001+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464313001, current=UP, previous=STARTING]
+2025-06-09T15:48:33.001+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:48:33.006+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T15:48:33.006+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T15:48:33.013+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:48:33.013+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 1.367 seconds (process running for 2877.919)
+2025-06-09T15:48:33.014+05:30  INFO 2552 --- [orderMgt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-09T15:48:33.015+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T15:49:09.206+05:30  INFO 2552 --- [orderMgt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-09T15:49:09.207+05:30  INFO 2552 --- [orderMgt] [Thread-19] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERMGT with eureka with status DOWN
+2025-06-09T15:49:09.207+05:30  INFO 2552 --- [orderMgt] [Thread-19] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464349207, current=DOWN, previous=UP]
+2025-06-09T15:49:09.207+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:49:09.208+05:30  INFO 2552 --- [orderMgt] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:49:09.211+05:30  INFO 2552 --- [orderMgt] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:49:09.213+05:30  INFO 2552 --- [orderMgt] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:49:09.213+05:30  INFO 2552 --- [orderMgt] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-06-09T15:49:09.218+05:30  INFO 2552 --- [orderMgt] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-06-09T15:49:09.218+05:30  INFO 2552 --- [orderMgt] [Thread-19] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T15:49:09.222+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:49:09.223+05:30  INFO 2552 --- [orderMgt] [Thread-19] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T15:49:09.225+05:30  INFO 2552 --- [orderMgt] [Thread-19] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - deregister  status: 200
+2025-06-09T15:49:09.225+05:30  INFO 2552 --- [orderMgt] [Thread-19] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T15:49:09.271+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting Order Management Service...
+2025-06-09T15:49:10.032+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 2552 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T15:49:10.032+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:49:10.034+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:49:10.034+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=4cf4b635cc2335695573287755b9502c76dd8a7e, state=
+2025-06-09T15:49:10.149+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:49:10.158+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-06-09T15:49:10.198+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T15:49:10.236+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T15:49:10.238+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:49:10.238+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:49:10.275+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:49:10.275+05:30  INFO 2552 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 241 ms
+2025-06-09T15:49:10.289+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:49:10.290+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:49:10.295+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:49:10.296+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-06-09T15:49:10.306+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ad9409d
+2025-06-09T15:49:10.306+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-06-09T15:49:10.307+05:30  WARN 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:49:10.308+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:49:10.333+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:49:10.346+05:30  INFO 2552 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:49:10.386+05:30  WARN 2552 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:49:10.389+05:30  WARN 2552 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:49:10.407+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T15:49:10.477+05:30  INFO 2552 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:49:10.481+05:30  WARN 2552 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:49:10.485+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:49:10.486+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:49:10.486+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:49:10.486+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:49:10.486+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:49:10.486+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:49:10.486+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:49:10.486+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:49:10.487+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:49:10.487+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:49:10.501+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:49:10.501+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:49:10.502+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:49:10.502+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749464350502 with initial instances count: 7
+2025-06-09T15:49:10.503+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T15:49:10.503+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464350503, current=UP, previous=STARTING]
+2025-06-09T15:49:10.503+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:49:10.510+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T15:49:10.511+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T15:49:10.514+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:49:10.516+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 1.242 seconds (process running for 2915.423)
+2025-06-09T15:49:10.517+05:30  INFO 2552 --- [orderMgt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-09T15:49:10.517+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T15:50:04.221+05:30  INFO 2552 --- [orderMgt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-09T15:50:04.222+05:30  INFO 2552 --- [orderMgt] [Thread-25] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERMGT with eureka with status DOWN
+2025-06-09T15:50:04.223+05:30  INFO 2552 --- [orderMgt] [Thread-25] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464404223, current=DOWN, previous=UP]
+2025-06-09T15:50:04.223+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:50:04.224+05:30  INFO 2552 --- [orderMgt] [Thread-25] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:50:04.231+05:30  INFO 2552 --- [orderMgt] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:50:04.234+05:30  INFO 2552 --- [orderMgt] [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:50:04.234+05:30  INFO 2552 --- [orderMgt] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-06-09T15:50:04.239+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:50:04.245+05:30  INFO 2552 --- [orderMgt] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-06-09T15:50:04.245+05:30  INFO 2552 --- [orderMgt] [Thread-25] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T15:50:07.257+05:30  INFO 2552 --- [orderMgt] [Thread-25] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T15:50:07.274+05:30  INFO 2552 --- [orderMgt] [Thread-25] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - deregister  status: 200
+2025-06-09T15:50:07.274+05:30  INFO 2552 --- [orderMgt] [Thread-25] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T15:50:07.323+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting Order Management Service...
+2025-06-09T15:50:08.148+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 2552 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T15:50:08.148+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:50:08.150+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:50:08.150+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=4cf4b635cc2335695573287755b9502c76dd8a7e, state=
+2025-06-09T15:50:08.317+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:50:08.326+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-06-09T15:50:08.369+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T15:50:08.414+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T15:50:08.415+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:50:08.415+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:50:08.460+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:50:08.461+05:30  INFO 2552 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 310 ms
+2025-06-09T15:50:08.481+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:50:08.483+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:50:08.489+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:50:08.490+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-06-09T15:50:08.504+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@a0a2787
+2025-06-09T15:50:08.504+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-06-09T15:50:08.505+05:30  WARN 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:50:08.505+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:50:08.531+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:50:08.538+05:30  INFO 2552 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:50:08.582+05:30  WARN 2552 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:50:08.585+05:30  WARN 2552 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:50:08.600+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T15:50:08.677+05:30  INFO 2552 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:50:08.682+05:30  WARN 2552 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:50:08.686+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:50:08.687+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:50:08.687+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:50:08.688+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:50:08.688+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:50:08.688+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:50:08.688+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:50:08.688+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:50:08.688+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:50:08.688+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:50:08.706+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:50:08.706+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:50:08.707+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:50:08.708+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749464408708 with initial instances count: 7
+2025-06-09T15:50:08.709+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T15:50:08.710+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464408710, current=UP, previous=STARTING]
+2025-06-09T15:50:08.711+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:50:08.715+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T15:50:08.715+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T15:50:08.723+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:50:08.726+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 1.399 seconds (process running for 2973.633)
+2025-06-09T15:50:08.728+05:30  INFO 2552 --- [orderMgt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-09T15:50:08.728+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T15:50:23.417+05:30  INFO 2552 --- [orderMgt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-06-09T15:50:23.418+05:30  INFO 2552 --- [orderMgt] [Thread-31] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERMGT with eureka with status DOWN
+2025-06-09T15:50:23.418+05:30  INFO 2552 --- [orderMgt] [Thread-31] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464423418, current=DOWN, previous=UP]
+2025-06-09T15:50:23.419+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:50:23.419+05:30  INFO 2552 --- [orderMgt] [Thread-31] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:50:23.423+05:30  INFO 2552 --- [orderMgt] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:50:23.425+05:30  INFO 2552 --- [orderMgt] [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:50:23.426+05:30  INFO 2552 --- [orderMgt] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-06-09T15:50:23.430+05:30  INFO 2552 --- [orderMgt] [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-06-09T15:50:23.430+05:30  INFO 2552 --- [orderMgt] [Thread-31] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T15:50:23.433+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:50:23.434+05:30  INFO 2552 --- [orderMgt] [Thread-31] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T15:50:23.436+05:30  INFO 2552 --- [orderMgt] [Thread-31] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - deregister  status: 200
+2025-06-09T15:50:23.437+05:30  INFO 2552 --- [orderMgt] [Thread-31] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T15:50:23.482+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting Order Management Service...
+2025-06-09T15:50:24.203+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 2552 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T15:50:24.203+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:50:24.204+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:50:24.204+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=4cf4b635cc2335695573287755b9502c76dd8a7e, state=
+2025-06-09T15:50:24.419+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:50:24.428+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-06-09T15:50:24.476+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T15:50:24.515+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T15:50:24.515+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:50:24.515+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:50:24.543+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:50:24.543+05:30  INFO 2552 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 339 ms
+2025-06-09T15:50:24.567+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:50:24.569+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:50:24.574+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:50:24.575+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-06-09T15:50:24.620+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3fe5b991
+2025-06-09T15:50:24.620+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-06-09T15:50:24.623+05:30  WARN 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:50:24.624+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-7)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:50:24.673+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:50:24.682+05:30  INFO 2552 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:50:24.729+05:30  WARN 2552 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:50:24.734+05:30  WARN 2552 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:50:24.750+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T15:50:24.812+05:30  INFO 2552 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:50:24.816+05:30  WARN 2552 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:50:24.821+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:50:24.823+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:50:24.823+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:50:24.824+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:50:24.824+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:50:24.824+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:50:24.824+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:50:24.824+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:50:24.824+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:50:24.824+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:50:24.842+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:50:24.842+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:50:24.842+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:50:24.843+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749464424842 with initial instances count: 7
+2025-06-09T15:50:24.843+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T15:50:24.843+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464424843, current=UP, previous=STARTING]
+2025-06-09T15:50:24.843+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:50:24.846+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T15:50:24.846+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T15:50:24.851+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 1.368 seconds (process running for 2989.757)
+2025-06-09T15:50:24.852+05:30  INFO 2552 --- [orderMgt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-09T15:50:24.853+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:50:24.853+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T15:50:37.483+05:30  INFO 2552 --- [orderMgt] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-06-09T15:50:37.484+05:30  INFO 2552 --- [orderMgt] [Thread-37] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application ORDERMGT with eureka with status DOWN
+2025-06-09T15:50:37.484+05:30  INFO 2552 --- [orderMgt] [Thread-37] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464437484, current=DOWN, previous=UP]
+2025-06-09T15:50:37.484+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:50:37.485+05:30  INFO 2552 --- [orderMgt] [Thread-37] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-06-09T15:50:37.487+05:30  INFO 2552 --- [orderMgt] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-06-09T15:50:37.489+05:30  INFO 2552 --- [orderMgt] [Thread-37] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:50:37.489+05:30  INFO 2552 --- [orderMgt] [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-06-09T15:50:37.495+05:30  INFO 2552 --- [orderMgt] [Thread-37] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-06-09T15:50:37.495+05:30  INFO 2552 --- [orderMgt] [Thread-37] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-06-09T15:50:37.499+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:50:37.499+05:30  INFO 2552 --- [orderMgt] [Thread-37] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-06-09T15:50:37.501+05:30  INFO 2552 --- [orderMgt] [Thread-37] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - deregister  status: 200
+2025-06-09T15:50:37.502+05:30  INFO 2552 --- [orderMgt] [Thread-37] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-06-09T15:50:37.552+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting Order Management Service...
+2025-06-09T15:50:38.864+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Starting OrderMgtApplication using Java 21.0.5 with PID 2552 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\orderMgt)
+2025-06-09T15:50:38.865+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-06-09T15:50:38.866+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:8888
+2025-06-09T15:50:38.866+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=orderMgt, profiles=[default], label=null, version=4cf4b635cc2335695573287755b9502c76dd8a7e, state=
+2025-06-09T15:50:39.013+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-09T15:50:39.022+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JPA repository interface.
+2025-06-09T15:50:39.061+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=1337c3e5-846e-33d6-bd0c-9644a777b3c4
+2025-06-09T15:50:39.100+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2025-06-09T15:50:39.101+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-06-09T15:50:39.101+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-06-09T15:50:39.131+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-06-09T15:50:39.131+05:30  INFO 2552 --- [orderMgt] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 265 ms
+2025-06-09T15:50:39.147+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-09T15:50:39.149+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-09T15:50:39.153+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-09T15:50:39.154+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2025-06-09T15:50:39.166+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-8 - Added connection com.mysql.cj.jdbc.ConnectionImpl@259774e1
+2025-06-09T15:50:39.167+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2025-06-09T15:50:39.169+05:30  WARN 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-09T15:50:39.169+05:30  INFO 2552 --- [orderMgt] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-8)']
+	Database driver: undefined/unknown
+	Database version: 8.0.41
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-06-09T15:50:39.207+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-09T15:50:39.217+05:30  INFO 2552 --- [orderMgt] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-09T15:50:39.255+05:30  WARN 2552 --- [orderMgt] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-09T15:50:39.259+05:30  WARN 2552 --- [orderMgt] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-06-09T15:50:39.277+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'MENUITEMS' URL not provided. Will try picking an instance via load-balancing.
+2025-06-09T15:50:39.399+05:30  INFO 2552 --- [orderMgt] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-09T15:50:39.403+05:30  WARN 2552 --- [orderMgt] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-06-09T15:50:39.421+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-09T15:50:39.423+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-09T15:50:39.424+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:50:39.424+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-09T15:50:39.424+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-09T15:50:39.424+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-09T15:50:39.424+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-09T15:50:39.425+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-09T15:50:39.425+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-09T15:50:39.425+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-09T15:50:39.446+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-09T15:50:39.447+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-06-09T15:50:39.447+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-09T15:50:39.447+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1749464439447 with initial instances count: 7
+2025-06-09T15:50:39.448+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application ORDERMGT with eureka with status UP
+2025-06-09T15:50:39.448+05:30  INFO 2552 --- [orderMgt] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1749464439448, current=UP, previous=STARTING]
+2025-06-09T15:50:39.448+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083: registering service...
+2025-06-09T15:50:39.452+05:30  INFO 2552 --- [orderMgt] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path '/'
+2025-06-09T15:50:39.452+05:30  INFO 2552 --- [orderMgt] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8083
+2025-06-09T15:50:39.458+05:30  INFO 2552 --- [orderMgt] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_ORDERMGT/LTIN603865.cts.com:orderMgt:8083 - registration status: 204
+2025-06-09T15:50:39.458+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Started OrderMgtApplication in 1.904 seconds (process running for 3004.365)
+2025-06-09T15:50:39.460+05:30  INFO 2552 --- [orderMgt] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-06-09T15:50:39.461+05:30  INFO 2552 --- [orderMgt] [restartedMain] c.f.orderMgt.OrderMgtApplication         : Order Management Service started successfully!
+2025-06-09T15:55:39.425+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-09T15:56:53.981+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-09T15:56:53.981+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-06-09T15:56:53.982+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-06-09T15:56:53.990+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] c.f.orderMgt.controller.OrderController  : Placing an order directly: Orders(orderId=null, restaurantID=1, status=PENDING, totalAmount=99.0, email=dhoni@gmail.com)
+2025-06-09T15:56:54.005+05:30  INFO 2552 --- [orderMgt] [http-nio-8083-exec-1] c.f.orderMgt.service.OrderServiceImpl    : Order placed directly successfully with ID: 4
+2025-06-09T15:57:09.635+05:30  INFO 2552 --- [orderMgt] [scheduling-1] c.f.orderMgt.service.OrderServiceImpl    : Order ID: 4 status updated to DELIVERED by scheduled task
+2025-06-09T16:00:39.437+05:30  INFO 2552 --- [orderMgt] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
