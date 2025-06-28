@@ -1,0 +1,30 @@
+2025-05-30T09:18:37.376+05:30  INFO 8396 --- [ConfigServer] [restartedMain] c.c.C.ConfigServerApplication            : Starting ConfigServerApplication using Java 21.0.5 with PID 8396 (C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\ConfigServer\target\classes started by 2400668 in C:\Users\2400668\Desktop\OFds\-Online-Food-Delivery-System\ConfigServer)
+2025-05-30T09:18:37.380+05:30  INFO 8396 --- [ConfigServer] [restartedMain] c.c.C.ConfigServerApplication            : No active profile set, falling back to 1 default profile: "default"
+2025-05-30T09:18:37.474+05:30  INFO 8396 --- [ConfigServer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-05-30T09:18:37.475+05:30  INFO 8396 --- [ConfigServer] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-05-30T09:18:38.776+05:30  INFO 8396 --- [ConfigServer] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9cd58f06-8266-3c99-a3a6-7a35f0475794
+2025-05-30T09:18:39.413+05:30  INFO 8396 --- [ConfigServer] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8888 (http)
+2025-05-30T09:18:39.428+05:30  INFO 8396 --- [ConfigServer] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-30T09:18:39.429+05:30  INFO 8396 --- [ConfigServer] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-30T09:18:39.478+05:30  INFO 8396 --- [ConfigServer] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-30T09:18:39.479+05:30  INFO 8396 --- [ConfigServer] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2002 ms
+2025-05-30T09:18:40.279+05:30  INFO 8396 --- [ConfigServer] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-05-30T09:18:40.566+05:30  WARN 8396 --- [ConfigServer] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'defaultEnvironmentRepository' defined in class path resource [org/springframework/cloud/config/server/config/DefaultRepositoryConfiguration.class]: You need to configure a uri for the git repository.
+2025-05-30T09:18:40.575+05:30  INFO 8396 --- [ConfigServer] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-05-30T09:18:40.605+05:30  INFO 8396 --- [ConfigServer] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-05-30T09:18:40.673+05:30 ERROR 8396 --- [ConfigServer] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Invalid config server configuration.
+
+Action:
+
+If you are using the git profile, you need to set a Git URI in your configuration.  If you have set spring.cloud.config.server.bootstrap=true, you need to use a composite configuration.
+
