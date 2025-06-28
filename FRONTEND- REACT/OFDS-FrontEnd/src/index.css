@@ -1,0 +1,529 @@
+:root {
+  --primary-orange: hwb(23 5% 4%); /* Original orange */
+  --dark-orange: #f2863e; /* Slightly darker for accents/hovers */
+  --text-dark: #333;
+  --text-light: #666;
+  --background-light: #f8f8f8;
+  --white: #fff;
+  --border-radius-btn: 8px; /* More rounded buttons */
+  --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  color: var(--text-dark);
+  line-height: 1.6;
+  background-color: var(--background-light); /* Subtle off-white background */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.container {
+  max-width: 1200px; /* Max width for content */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.main-header {
+  background-color: var(--primary-orange);
+  padding: 15px 0;
+  box-shadow: var(--shadow-light);
+  position: sticky; /* Make it sticky */
+  top: 0;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  height: 80px;
+  background-color: #ff6600;
+  color: white;
+  position: fixed; /* Makes the navbar stay in place */
+  top: 0; /* Aligns it to the top of the viewport */
+  left: 0; /* Aligns it to the left of the viewport */
+  width: 98%; /* Makes it span the full width of the viewport */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 5px; /* DECREASED SPACE HERE */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 15px 25px;
+  display: flex;
+  gap: 30px;
+  margin-right: 40px;
+
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 17px;
+  position: relative;
+  padding-bottom: 5px; /* For underline effect */
+  transition: color 0.3s ease;
+}
+
+.nav-links li a::after { /* Underline effect */
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--white);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+  color: rgba(34, 11, 11, 0.8);
+}
+
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+.btn {
+  padding: 12px 28px;
+  border: none;
+  border-radius: var(--border-radius-btn);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin: 0px 5px; /* Space between buttons */
+}
+
+.btn-get-app {
+  background-color: transparent;
+  color: var(--white);
+  border: 2px solid var(--white);
+  gap: 20px;
+}
+
+.btn-get-app:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px); /* Slight lift */
+
+}
+
+.btn-sign-in {
+  background-color: rgb(32, 29, 24); /* Slightly darker orange for solid button */
+  color: var(--black);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+  border: 2px solid var(--dark-orange);
+}
+
+.btn-sign-in:hover {
+  background-color: #2b1e15; /* Even darker on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Hero Section */
+
+/* In your main CSS file (e.g., index.css or App.css) */
+.welcome-message {
+  font-size: 26px; /* Larger for prominence */
+  font-weight: 700;
+  color: #f7f7f7; /* Slightly off-white for distinction */
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Text shadow for readability */
+}
+
+.welcome-message .highlight {
+  color: #ffd700; /* Gold-like highlight for welcome name */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Adjust position for smaller screens if necessary */
+@media (max-width: 768px) {
+  .welcome-message {
+      font-size: 20px;
+  }
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--primary-orange) 0%, #FF8C00 100%); /* Subtle gradient */
+  padding: 80px 0;
+  color: var(--white);
+  position: relative;
+  min-height: 500px; /* Ensure enough height */
+  display: flex;
+  align-items: center; /* Vertically center content */
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* Content slightly wider than image */
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-content {
+  padding-right: 40px; /* Space for text */
+}
+
+.hero-headline {
+  font-size: 52px; /* Large, bold headline */
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-headline .highlight {
+  color: #FFDDC4; /* Lighter shade of orange for highlight */
+}
+
+.hero-subheadline {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.search-box {
+  display: flex;
+  gap: 15px;
+  background-color: var(--white);
+  padding: 10px;
+  border-radius: var(--border-radius-btn);
+  box-shadow: var(--shadow-medium);
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.location-input {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: none;
+  font-size: 17px;
+  border-radius: var(--border-radius-btn);
+  outline: none; /* Remove default focus outline */
+  color: var(--text-dark);
+}
+
+.location-input::placeholder {
+  color: var(--text-light);
+}
+
+.btn-secondary-solid {
+  background-color: white;/*in button color */
+  color: black;
+  padding: 12px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary-solid:hover {
+  background-color: #ed670e;
+  transform: translateY(-1px);
+}
+
+.popular-search-text {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+
+/* CAROUSEL IMAGE CONTAINER */
+.hero-img {
+  position: relative; /* All children with absolute positioning will be relative to this */
+  width: 100%; /* Occupy full grid column width */
+  /* Set a fixed height or aspect ratio for stability */
+  padding-top: 75%; /* Example: 4:3 aspect ratio. Adjust based on your image common aspect ratio. */
+  /* If images are generally taller, try 100% for square or more. */
+  overflow: hidden; /* Crucial: Clips anything outside this container, including transforms */
+  display: flex; /* Helps to center the image if needed */
+  justify-content: center;
+  align-items: center;
+}
+
+.biryani-image {
+  position: absolute; /* Take image out of normal document flow */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%) rotate(-3deg) scale(1.05); /* Centered, then rotated/scaled */
+
+  max-width: 100%; /* Ensure image doesn't overflow its container before transform */
+  max-height: 100%; /* Ensure image doesn't overflow its container before transform */
+
+  object-fit: contain; /* Shrink to fit, but don't crop. Will show empty space if aspect ratio differs. */
+  /* Or use 'cover' if you prefer cropping over empty space. */
+  object-position: center; /* Center the image within the object-fit area */
+
+  display: block; /* Remove extra space below image */
+
+  opacity: 0; /* Hidden by default */
+  transition: opacity 1s ease-in-out, transform 2s ease; /* Fade and transform transition */
+
+  z-index: 1; /* Default z-index for all images */
+}
+
+.biryani-image.active {
+  opacity: 1; /* Make active image visible */
+  z-index: 2; /* Bring active image to front */
+}
+
+/* Hover effect should not affect other elements */
+.biryani-image:hover {
+  transform: translate(-50%, -50%) rotate(0deg) scale(1.08); /* Straighten and zoom slightly on hover */
+}
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr; /* Stack columns on smaller screens */
+    text-align: center;
+  }
+  .hero-content {
+    padding-right: 0;
+  }
+  .hero-headline {
+    font-size: 40px;
+  }
+  .search-box {
+    flex-direction: column; /* Stack input and button */
+  }
+  .location-input,
+  .btn-secondary-solid {
+    width: 100%;
+  }
+  .main-nav {
+    display: none; /* Hide nav links on smaller screens, use hamburger menu */
+  }
+  .header-actions {
+    display: flex;
+    gap: 10px;
+  }
+  .navbar .header-actions {
+    margin-left: auto; /* Push buttons to right if nav is hidden */
+  }
+
+  .hero-img {
+    padding-top: 85%; /* Adjust aspect ratio for smaller screens if images are more portrait */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-header {
+    padding: 10px 0;
+  }
+  .logo {
+    font-size: 24px;
+  }
+  .logo img {
+    height: 30px;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  .hero-section {
+    padding: 60px 0;
+  }
+  .hero-headline {
+    font-size: 32px;
+  }
+  .hero-subheadline {
+    font-size: 16px;
+  }
+  .hero-img {
+    padding-top: 100%; /* Make it square on very small screens if desired */
+  }
+}
+
+/* ... (Your existing CSS code) ... */
+
+/* Footer Styles */
+.main-footer {
+  background-color: #000; /* Black background like Zomato */
+  color: #bbb; /* Light grey text */
+  padding: 60px 0 30px; /* Top, bottom padding */
+  font-size: 14px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(5, 1fr); /* Adjust column widths as needed */
+  gap: 40px; /* Space between columns */
+  padding-bottom: 40px; /* Space above the bottom text */
+  border-bottom: 1px solid #333; /* Separator line */
+  margin-bottom: 30px; /* Space between line and bottom text */
+}
+
+.footer-brand .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--white);
+  font-size: 28px; /* Slightly smaller than header logo */
+  font-weight: bold;
+  margin-bottom: 20px;
+  height: 0%;
+}
+
+.footer-brand .logo img {
+  height: 40px; /* Adjust logo size */
+  margin-right: 10px;
+}
+
+.footer-column h3 {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  white-space: nowrap; /* Prevent heading from wrapping */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 9px;
+}
+
+.footer-column ul li a {
+  color: #bbb; /* Link color */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: var(--primary-orange); /* Orange hover effect */
+}
+
+.app-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Space between app badges */
+  
+}
+
+
+.app-badge {
+  width: 150px; /* Adjust size of app badges */
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.app-badge:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.footer-bottom {
+  text-align: left; /* Align text left */
+  color: #888; /* Lighter grey for bottom text */
+  line-height: 1.5;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.quote{
+ text-align: center;
+ font-family: cursive;
+}
+
+.quote li {
+  list-style: none;
+}
+/* Responsive adjustments for the footer */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on medium screens */
+    gap: 30px;
+  }
+  .footer-brand {
+    grid-column: span 3; /* Brand takes full width */
+    text-align: center;
+  }
+  .footer-brand .logo {
+    justify-content: center; /* Center logo */
+  }
+  .footer-column h3 {
+    text-align: center;
+  }
+  .footer-column ul {
+    text-align: center;
+  }
+  .social-icons {
+    justify-content: center; /* Center social icons */
+  }
+  .app-buttons {
+    align-items: center; /* Center app buttons */
+  }
+  .footer-bottom {
+    text-align: center; /* Center bottom text */
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+  }
+  .footer-brand {
+    grid-column: span 2; /* Brand takes full width */
+  }
+  /* STACK APP BUTTONS ON SMALLER SCREENS */
+  .app-buttons {
+    flex-direction: row;
+    align-items: center; /* Center stacked buttons */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr; /* Stack all columns on extra small screens */
+  }
+  .footer-brand {
+    grid-column: span 1; /* Brand takes full width */
+  }
+}

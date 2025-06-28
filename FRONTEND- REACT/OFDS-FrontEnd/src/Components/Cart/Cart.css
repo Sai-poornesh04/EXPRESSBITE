@@ -1,0 +1,249 @@
+/* Floating Cart Button */
+.floating-cart-button {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #f97316; /* Orange */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.4);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000; /* Ensure it's above other content */
+  }
+ 
+  .floating-cart-button:hover {
+    background-color: #e65c00; /* Darker orange */
+    transform: translateY(-2px);
+  }
+ 
+  .cart-icon {
+    width: 28px;
+    height: 28px;
+    fill: currentColor; /* Use button's color */
+    margin-right: 4px;
+  }
+ 
+  .cart-item-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000; /* Red for count */
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+    min-width: 24px; /* Ensure circular shape */
+    text-align: center;
+  }
+ 
+  /* Cart Modal */
+  .cart-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001; /* Above floating button */
+  }
+ 
+  .cart-modal-content {
+    background-color: white;
+    border-radius: 16px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 80vh; /* Limit height for scrollability */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: scale(0.95); /* Slight animation on open */
+    animation: modalFadeIn 0.3s forwards;
+  }
+ 
+  @keyframes modalFadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+ 
+  .cart-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 24px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+ 
+  .cart-modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+  }
+ 
+  .close-modal-button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: #666;
+    cursor: pointer;
+    padding: 0 8px;
+    transition: color 0.2s ease;
+  }
+ 
+  .close-modal-button:hover {
+    color: #f97316; /* Orange on hover */
+  }
+ 
+  .cart-modal-body {
+    flex-grow: 1;
+    padding: 20px 24px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+  }
+ 
+  .empty-cart-message {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    padding: 40px 0;
+  }
+ 
+  .cart-items-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+ 
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #eee; /* Dashed separator */
+  }
+ 
+  .cart-item:last-child {
+    border-bottom: none;
+  }
+ 
+  .cart-item-details {
+    flex-grow: 1;
+  }
+ 
+  .cart-item-name {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    display: block; /* Ensure name takes full width */
+    margin-bottom: 4px;
+  }
+ 
+  .cart-item-price {
+    font-size: 14px;
+    color: #f97316; /* Orange price */
+    font-weight: bold;
+  }
+ 
+  .cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between buttons/quantity */
+  }
+ 
+  .quantity-button {
+    background-color: #f0f0f0; /* Light gray */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+ 
+  .quantity-button:hover {
+    background-color: #e0e0e0;
+  }
+ 
+  .item-quantity {
+    font-size: 16px;
+    font-weight: 500;
+    min-width: 20px;
+    text-align: center;
+  }
+ 
+  .remove-item-button {
+    background-color: #dc3545; /* Red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+ 
+  .remove-item-button:hover {
+    background-color: #c82333; /* Darker red */
+  }
+ 
+  .cart-modal-footer {
+    padding: 20px 24px;
+    border-top: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+ 
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+ 
+  .total-price {
+    color: #f97316; /* Orange total price */
+    font-size: 22px;
+  }
+ 
+  .checkout-button {
+    background-color: #f97316; /* Orange */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
+  }
+ 
+  .checkout-button:hover:not(:disabled) {
+    background-color: #e65c00; /* Darker orange */
+    box-shadow: 0 6px 16px rgba(249, 115, 22, 0.4);
+  }
+ 
+  .checkout-button:disabled {
+    background-color: #cccccc; /* Gray when disabled */
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+ 

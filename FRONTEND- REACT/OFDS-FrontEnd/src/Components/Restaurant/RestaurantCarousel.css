@@ -1,0 +1,231 @@
+/* Restaurant Carousel Section */
+.restaurant-carousel-wrapper {
+  background-color: #f7f7f7; /* Light grey background for the section */
+  padding: 40px 0;
+  margin-top: 30px; /* Space above the carousel */
+}
+
+.carousel-title-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.carousel-main-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+  color: #333;
+}
+
+.carousel-nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-nav-arrow {
+  background-color: #ffac12;
+  border: 1px solid #e0e0e0;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #555;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-nav-arrow:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-carousel-container {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling for scrollBy */
+  gap: 20px; /* Space between cards */
+  padding-bottom: 20px; /* For scrollbar visibility if needed, and bottom spacing */
+  /* Hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.restaurant-carousel-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Restaurant Card Item */
+.restaurant-card-item {
+  background-color: #fff;
+  border-radius: 16px; /* Rounded corners for the card */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Softer shadow */
+  min-width: 300px; /* Minimum width of a card */
+  max-width: 300px; /* Maximum width of a card */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* To ensure border-radius clips image */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.restaurant-card-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card-image-container {
+  position: relative;
+  width: 100%;
+  height: 180px; /* Fixed height for the image area */
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the area, may crop */
+}
+
+.restaurant-rating {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  color: #FFD700; /* Gold color for the star */
+  margin-left: 3px;
+  font-size: 12px; /* Make star slightly smaller */
+}
+
+.restaurant-details {
+  padding: 15px;
+  flex-grow: 1; /* Allow this section to grow and push offers down */
+}
+
+.restaurant-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d2d2d;
+  margin: 0 0 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.restaurant-info {
+  font-size: 13px;
+  color: #666;
+  margin: 3px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.info-dot {
+  margin: 0 5px;
+  color: #bbb;
+}
+
+.restaurant-booking-info {
+  font-size: 12px;
+  color: #555;
+  margin-top: 10px;
+  padding: 6px 0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+}
+
+.table-booking-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  fill: #777;
+}
+
+.restaurant-offers {
+  padding: 15px;
+  border-top: 1px solid #f0f0f0; /* Separator line if details are short */
+  margin-top: auto; /* Push offers to the bottom if details are short */
+}
+
+.main-offer {
+  font-size: 13px;
+  color: #008000; /* Green color for main offer */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.offer-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  fill: #008000;
+}
+
+.other-offers-count {
+  color: #888;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.bank-offer {
+  background-color: #e6f7ff; /* Light blue background for bank offer */
+  color: #007bff; /* Blue text for bank offer */
+  padding: 8px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Styles for the "View Menu" Button */
+.restaurant-card-item .card-actions {
+  padding: 15px;
+  border-top: 1px solid #f0f0f0;
+  margin-top: auto; /* Ensures button is at the bottom */
+  text-align: center;
+}
+
+.restaurant-card-item .view-menu-button {
+  background-color: #ec7309; /* Orange theme color */
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounded corners */
+  padding: 12px 25px; /* Increased padding for better touch target */
+  font-size: 17px; /* Slightly larger font */
+  font-weight: 700; /* Bolder text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  width: 100%; /* Make button full width of card action area */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  letter-spacing: 0.5px; /* Slight letter spacing */
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.restaurant-card-item .view-menu-button:hover {
+  background-color: #080501; /* Darker shade on hover */
+  transform: translateY(-3px); /* More pronounced lift effect */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+.restaurant-card-item .view-menu-button:active {
+  background-color: #ee5d0e; /* Even darker on click */
+  transform: translateY(0); /* Press down effect */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

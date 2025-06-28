@@ -1,0 +1,593 @@
+/* --- Login Popup Overlay (Your existing code) --- */
+.login-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 2000;
+    transition: background-color 0.4s ease-out;
+}
+
+/* Overlay active state (when popup is fully visible) */
+.login-popup-overlay.active {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Popup Content Container (Your existing code) */
+.login-popup-content {
+    background-color: white;
+    width: 420px;
+    height: auto;
+    max-height: 90vh;
+    border-radius: 4px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+/* Active state: slide into view and become visible (Your existing code) */
+.login-popup-content.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* Close Button (Your existing code) */
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+}
+
+/* --- Top Section (Header and Image) (Your existing code) --- */
+.popup-top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Popup Header (Your existing code) */
+.popup-header {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.popup-header h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Toggle View Link (Your existing code) */
+.toggle-view-link {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.toggle-view-link a {
+    color: #f77024;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Underline below "Login" / "Sign up" text (Your existing code) */
+.popup-header::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #f77024;
+    margin-top: 8px;
+}
+
+/* Food Image on the right of the popup (Your existing code) */
+.popup-image {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.popup-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Popup Form (Your existing code) */
+.popup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-bottom: 10px;
+}
+
+/* Input Group (Your existing code) */
+.input-group {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #e9e9eb;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f8f8f8;
+}
+
+.input-group input:focus {
+    border-color: #f77024;
+    background-color: white;
+}
+
+.input-group label {
+    position: absolute;
+    top: 14px;
+    left: 10px;
+    color: #777;
+    font-size: 15px;
+    pointer-events: none;
+    transition: 0.2s ease all;
+}
+
+/* Floating label effect (Your existing code) */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -8px;
+    left: 8px;
+    font-size: 10px;
+    color: #777;
+    background-color: white;
+    padding: 0 4px;
+}
+
+/* Referral code link (Your existing code) */
+.referral-code-link {
+    font-size: 14px;
+    text-align: left;
+    margin-top: -10px;
+}
+
+.referral-code-link a {
+    color: #f77024;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Popup Button (Your existing code) */
+.popup-button {
+    background-color: #f77024;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(247, 112, 36, 0.3);
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.popup-button:hover {
+    background-color: #e0601f;
+}
+
+/* Terms and Privacy Policy Text (Your existing code) */
+.terms-policy {
+    font-size: 11px;
+    color: #a0a0a0;
+    text-align: left;
+    margin-top: 25px;
+    line-height: 1.4;
+}
+
+.terms-policy a {
+    color: #f77024;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Responsive adjustments (Your existing code) */
+@media (max-width: 768px) {
+    .login-popup-content {
+        width: 90%;
+        margin: 20px auto;
+        height: auto;
+        max-height: 90vh;
+        margin-right: auto;
+    }
+    .close-button {
+        top: 10px;
+        right: 10px;
+        font-size: 20px;
+    }
+    .popup-header h2 {
+        font-size: 24px;
+    }
+    .popup-top-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .popup-image {
+        margin-top: 15px;
+    }
+}
+
+/* --- NEW: Login Success Animation Styles --- */
+.login-success-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    color: #4CAF50;
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 4px;
+    z-index: 100;
+    animation: fadeInOut 2s forwards;
+}
+
+.checkmark {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: #4CAF50;
+    stroke-miterlimit: 10;
+    box-shadow: inset 0px 0px 0px #4CAF50;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s forwards;
+    position: relative;
+    margin-bottom: 20px;
+}
+.checkmark__circle {
+    stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: #4CAF50;
+    fill: none;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+.checkmark__check {
+    transform-origin: 50% 50%;
+    stroke-dasharray: 48;
+    stroke-dashoffset: 48;
+    animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+    100% { stroke-dashoffset: 0; }
+}
+@keyframes fill {
+    100% { box-shadow: inset 0px 0px 0px 30px #4CAF50; }
+}
+@keyframes scale {
+    0%, 100% { transform: none; }
+    50% { transform: scale3d(1.1, 1.1, 1); }
+}
+@keyframes fadeInOut {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* --- REFINED: Navbar & Profile Styles (for Home.jsx Header) --- */
+
+.main-header {
+    background-color: #f77024; /* Swiggy's orange background */
+    padding: 18px 0; /* Increased padding for more vertical space, like Swiggy */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: px;
+    margin-right: 0px;
+}
+
+.app-name {
+    color: white;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Increased gap for more spacious look like Swiggy */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px; /* Increased gap between nav links */
+}
+
+.nav-links li a {
+    color: rgba(255, 255, 255, 0.8); /* Lighter grey for links on orange background */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: rgb(23, 17, 17); /* White on hover for emphasis */
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+}
+
+/* --- Specific Button Styles (Matching Swiggy's Look) --- */
+
+.btn-get-app {
+    background-color: transparent;
+    border: 1px solid white; /* White outline */
+    color: white; /* White text */
+    padding: 8px 15px;
+    border-radius: 6px; /* Slightly more rounded corners */
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-get-app:hover {
+    background-color: white;
+    color: #f77024; /* Orange text on white hover */
+}
+
+.btn-sign-in {
+    background-color: transparent; /* Changed to transparent as Swiggy often has just a login link/icon */
+    color: white; /* White text for Sign In */
+    padding: 8px 15px; /* Keep padding for clickable area */
+    border: none; /* No border for Sign In link */
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Transition for text color */
+    white-space: nowrap;
+}
+
+.btn-sign-in:hover {
+    color: #ffd7b0; /* Lighter white/orange on hover */
+}
+
+/* --- Profile Section Styles (Matching Swiggy's Look) --- */
+.profile-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.btn-profile-icon {
+    background-color: black; /* Transparent background */
+    color: white; /* White icon color */
+    border: none;
+    padding: 0;
+    border-radius: 50%; /* Still circular, but for the icon area not a background */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px; /* Slightly smaller icon area */
+    height: 38px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow: hidden;
+    font-size: 1.5em; /* Size of the Font Awesome icon */
+}
+
+.btn-profile-icon:hover {
+    background-color: rgba(23, 6, 6, 0.1); /* Subtle white background on hover */
+    color: white;
+}
+
+/* No .profile-initial class needed anymore as we are using a Font Awesome icon */
+
+.profile-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    min-width: 200px;
+    z-index: 1000;
+    padding: 8px 0; /* Padding inside the menu */
+    list-style: none;
+    animation: fadeInFromTop 0.2s ease-out;
+}
+
+/* Removed .profile-menu-header styles */
+/* As per Swiggy's look, the dropdown doesn't have a header like "Hello, Poornesh" */
+
+@keyframes fadeInFromTop {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.profile-menu-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-menu-links li {
+    padding: 0;
+    margin: 0;
+}
+
+.profile-menu-links a {
+    display: block;
+    padding: 10px 15px;
+    color: #333; /* Dark text for menu items */
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.profile-menu-links a:hover {
+    background-color: #f5f5f5;
+    color: #f77024; /* Orange on hover */
+}
+
+.btn-logout {
+    width: calc(100% - 30px); /* Adjust width to fit menu padding */
+    margin: 10px 15px; /* Apply margin for spacing */
+    padding: 10px 15px;
+    background-color: #e75e09;
+    color: rgb(243, 233, 233);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.btn-logout:hover {
+    background-color: #060101;
+}
+
+
+/* Login Success Notification BAR Wrapper */
+.login-success-notification-wrapper {
+    position: fixed;
+    top: 80px; /* Adjust this to be just below your header's height */
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Login Success Notification BAR */
+  .login-success-notification {
+    background-color: #d4edda;
+    color: #16b73b;
+    padding: 12px 20px;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    animation: slideInDown 0.4s ease-out, fadeOut 0.5s ease-out 2.5s forwards;
+  }
+  
+  .login-success-notification i {
+    font-size: 1.2em;
+    color: #28a745;
+  }
+  
+  @keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-20px);
+        visibility: hidden;
+    }
+  }
+
+  /* In LoginPopup.css or a global CSS file */
+.logout-notification {
+    background-color: #f8d7da; /* Light red */
+    color: #721c24; /* Dark red text */
+    border: 1px solid #f5c6cb;
+    margin-top: 70px;
+    animation: slideInDown 0.4s ease-out, fadeOut 0.5s ease-out 2.5s forwards;
+
+}
+.logout-notification .success-icon {
+    color: #721c24; /* Match text color */
+}
+  

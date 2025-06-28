@@ -1,0 +1,255 @@
+/* General page layout */
+.about-us-container {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area */
+.about-us-main {
+    flex-grow: 1;
+    padding: 40px 20px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Header section (About ExpressBite) */
+.about-us-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about-us-header h1 {
+    font-size: 3.5em;
+    color: #f77024;
+    margin-bottom: 15px;
+}
+
+.about-us-header p {
+    font-size: 1.3em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Our Story section */
+.our-story-section {
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    padding: 30px;
+    background-color: #fdf3ed;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.our-story-content {
+    flex: 1 1 45%;
+}
+
+.our-story-content h2 {
+    font-size: 2.2em;
+    color: #f77024;
+    margin-bottom: 20px;
+}
+
+.our-story-content p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.our-story-image-container {
+    flex: 1 1 45%;
+    text-align: center;
+}
+
+.our-story-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Our Core Values section */
+.core-values-section {
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    padding: 30px;
+}
+
+.core-values-section h2 {
+    font-size: 2.2em;
+    color: #f77024;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.core-values-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.core-value-item {
+    flex: 1 1 280px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border-bottom: 5px solid #f77024;
+    text-align: center;
+}
+
+.core-value-item h3 {
+    font-size: 1.5em;
+    color: #f77024;
+    margin-bottom: 10px;
+}
+
+/* Meet Our Team section */
+.team-section {
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.2em;
+    color: #f77024;
+    margin-bottom: 30px;
+}
+
+.team-members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.team-member-card {
+    flex: 1 1 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.team-member-card h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-member-card p {
+    color: #f77024;
+    font-weight: bold;
+}
+
+.team-member-card .description {
+    font-size: 0.95em;
+    color: #666;
+}
+
+/* Call to action section (Join the ExpressBite Family!) */
+.join-us-section {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.join-us-section h2 {
+    font-size: 2.2em;
+    color: #f77024;
+    margin-bottom: 20px;
+}
+
+.join-us-section p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.action-button {
+    display: inline-block;
+    background-color: #f77024;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-right: 20px; /* Only apply to the first button */
+}
+
+.action-button:hover {
+    background-color: #e6661e;
+}
+
+.action-button.secondary {
+    background-color: #fff;
+    color: #f77024;
+    border: 2px solid #f77024;
+    margin-right: 0; /* Remove margin from the second button */
+}
+
+.action-button.secondary:hover {
+    background-color: #fdf3ed;
+    color: #d15c1e;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-us-header h1 {
+        font-size: 2.5em;
+    }
+
+    .about-us-header p,
+    .our-story-content p,
+    .join-us-section p,
+    .action-button {
+        font-size: 1em;
+    }
+
+    .our-story-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .our-story-content,
+    .our-story-image-container {
+        flex: 1 1 100%;
+    }
+
+    .core-value-item,
+    .team-member-card {
+        flex: 1 1 100%;
+        max-width: 350px; /* Limit width for better appearance on small screens */
+    }
+
+    .action-button {
+        display: block;
+        width: calc(100% - 40px); /* Adjust for padding */
+        margin: 10px auto;
+        margin-right: auto; /* Ensure margin is consistent */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-us-main {
+        padding: 20px 10px;
+    }
+
+    .about-us-header h1 {
+        font-size: 2em;
+    }
+}

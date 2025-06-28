@@ -1,0 +1,184 @@
+/* Components/AdminDashboard.css */
+
+.admin-dashboard-container {
+    min-height: 100vh;
+    background-color: #f7f7f7; /* Light grey background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to top */
+    padding: 40px 20px;
+    font-family: 'Inter', sans-serif; /* Consistent font */
+}
+
+.admin-dashboard-title {
+    font-size: 38px;
+    font-weight: 800; /* Extra bold */
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffac12; /* Orange accent underline */
+}
+
+.admin-welcome-message {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.admin-user-email {
+    font-weight: 600;
+    color: #ffac12; /* Orange highlight */
+}
+
+.admin-user-role {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.admin-role-text {
+    font-weight: 600;
+    color: #ffac12; /* Changed to orange theme color */
+}
+
+.admin-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1000px; /* Max width for the grid */
+    margin-bottom: 40px;
+    justify-content: center; /* Center cards in the grid */
+}
+
+.admin-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to left */
+    text-align: left;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.admin-card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.admin-card-description {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Allows description to push button to bottom */
+}
+
+.admin-card-button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    align-self: flex-start; /* Align button to left */
+    background-color: #f5911e; /* All buttons now use the primary orange theme color */
+}
+
+.admin-card-button:hover {
+    background-color: #161208; /* Darker orange on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.admin-card-button:active {
+    background-color: #cc8c00; /* Even darker orange on click */
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific button classes removed as they now share the same base style */
+/* .admin-card-button.users-button { ... } */
+/* .admin-card-button.restaurants-button { ... } */
+/* .admin-card-button.orders-button { ... } */
+/* .admin-card-button.settings-button { ... } */
+
+
+.admin-logout-button {
+    margin-top: 40px;
+    background-color: #d9534f; /* Red for logout (danger action) */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.admin-logout-button:hover {
+    background-color: #150303; /* Darker red on hover */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.admin-logout-button:active {
+    background-color: #b02a26; /* Even darker red on click */
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-dashboard-title {
+        font-size: 32px;
+    }
+
+    .admin-welcome-message, .admin-user-role {
+        font-size: 16px;
+    }
+
+    .admin-cards-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
+        max-width: 400px; /* Constrain width for better readability */
+    }
+
+    .admin-card {
+        padding: 20px;
+    }
+
+    .admin-card-title {
+        font-size: 20px;
+    }
+
+    .admin-card-description {
+        font-size: 14px;
+    }
+
+    .admin-card-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .admin-logout-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}

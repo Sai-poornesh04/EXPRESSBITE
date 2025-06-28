@@ -1,0 +1,148 @@
+/* src/Components/ProfilePage.css */
+ 
+.profile-page-container {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom right, var(--background-gradient-start), var(--background-gradient-end));
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-dark);
+    padding-top: 80px; /* This padding pushes content below the fixed header */
+}
+ 
+.profile-content {
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: var(--border-radius-lg);
+    /* The shadow is defined by --shadow-medium variable */
+    box-shadow: var(--shadow-medium);
+    text-align: center;
+}
+ 
+.profile-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--primary-accent);
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+ 
+.profile-description {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    margin-bottom: 2.5rem;
+}
+ 
+.profile-details-card {
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius-md);
+    padding: 1.5rem 2rem;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 500px;
+    box-shadow: var(--shadow-light);
+}
+ 
+.profile-detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 0;
+    /* This line was previously removed to fix internal borders */
+    /* border-bottom: 1px dashed #eee; */
+    font-size: 1.05rem;
+}
+ 
+.profile-detail-item:last-child {
+    border-bottom: none;
+}
+ 
+.profile-detail-item strong {
+    color: var(--primary-accent);
+    min-width: 100px; /* Align labels */
+}
+ 
+.profile-detail-item span {
+    color: var(--text-dark);
+    font-weight: 500;
+}
+ 
+.profile-loading-message,
+.profile-error-message,
+.profile-empty-state {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+    color: var(--text-medium);
+}
+ 
+.profile-error-message {
+    color: #c0392b;
+    background-color: #fde6e6;
+    border: 1px solid #f2a4a4;
+    border-radius: var(--border-radius-md);
+    max-width: 600px;
+    margin: 3rem auto;
+}
+ 
+/* Define CSS Variables (adjust these to match your global styles if you have them) */
+:root {
+    --primary-accent: rgb(247, 97, 11);
+    --text-dark: #333;
+    --text-medium: #7f8c8d;
+    --white: #ffffff;
+    --background-gradient-start: #e0f2f7;
+    --background-gradient-end: #e8f8f5;
+    --border-radius-md: 0.75rem;
+    --border-radius-lg: 1.25rem;
+    --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
+ 
+    /* MODIFIED: Changed the box-shadow definition to remove vertical offset */
+    --shadow-medium: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Original was: --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.15); */
+    /* Explanation:
+       0: Horizontal offset
+       0: Vertical offset (changed from 8px)
+       20px: Blur radius (adjusted for a softer look)
+       rgba(0, 0, 0, 0.1): Color and transparency (adjusted slightly)
+    */
+ 
+    .logout-button-container{
+        text-align: center; /* Ensures the button is centered horizontally */
+        margin-top: 2rem; /* Standard space above the button */
+        margin-bottom: 2rem; /* Standard space below the button */
+        /* Remove padding here if you had added it previously, as it's not needed for a small button */
+    }
+   
+    /* Styles for the small Logout button */
+    .btn-logout {
+        background-color: #e74c3c; /* Distinct red for logout */
+        color: white;
+        padding: 0.8rem 1.5rem; /* Reduced padding for a smaller button */
+        border: none;
+        border-radius: var(--border-radius-md); /* Use your existing border-radius variable */
+        font-size: 1rem; /* Reduced font size */
+        font-weight: 600; /* Standard font weight */
+        cursor: pointer;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtler shadow */
+        /* Remove width/max-width properties if they were added to make it big */
+        /* display: inline-block; is usually the default for buttons, no need to explicitly set unless overridden */
+    }
+   
+    .btn-logout:hover {
+        background-color: #c0392b; /* Darker red on hover */
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+        /* Remove transform effects if you had them for the large button */
+        transform: none;
+    }
+   
+    .btn-logout:active {
+        /* Remove transform effects if you had them for the large button */
+        transform: none;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+ 

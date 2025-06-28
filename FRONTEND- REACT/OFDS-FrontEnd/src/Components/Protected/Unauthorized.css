@@ -1,0 +1,60 @@
+/* Base container for the page */
+.unauthorized-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Main content area, centered vertically and horizontally */
+.unauthorized-main {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* p-4 in Tailwind is 1rem */
+}
+
+/* Card for the access denied message */
+.unauthorized-card {
+    text-align: center;
+    max-width: 28rem; /* max-w-md in Tailwind */
+    background-color: #fff;
+    padding: 2rem; /* p-8 in Tailwind */
+    border-radius: 0.5rem; /* rounded-lg in Tailwind */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg in Tailwind */
+}
+
+/* Heading style for "Access Denied!" */
+.unauthorized-card h1 {
+    font-size: 2.25rem; /* text-4xl in Tailwind */
+    font-weight: 700; /* font-bold in Tailwind */
+    color: #dc2626; /* text-red-600 in Tailwind */
+    margin-bottom: 1rem; /* mb-4 in Tailwind */
+}
+
+/* Paragraph style for the explanation text */
+.unauthorized-card p {
+    font-size: 1.125rem; /* text-lg in Tailwind */
+    color: #4b5563; /* text-gray-700 in Tailwind */
+    margin-bottom: 1.5rem; /* mb-6 in Tailwind */
+}
+
+/* Style for the "Go to Home" link/button */
+.unauthorized-card .home-link {
+    display: inline-block;
+    background-color: #f97316; /* bg-orange-500 in Tailwind */
+    color: #fff;
+    padding: 0.75rem 1.5rem; /* px-6 py-3 in Tailwind */
+    border-radius: 0.375rem; /* rounded-md in Tailwind */
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter; /* transition-colors duration-300 in Tailwind */
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 1.125rem; /* text-lg in Tailwind */
+    font-weight: 600; /* font-semibold in Tailwind */
+    text-decoration: none; /* Remove underline from link */
+}
+
+/* Hover effect for the "Go to Home" link/button */
+.unauthorized-card .home-link:hover {
+    background-color: #ea580c; /* hover:bg-orange-600 in Tailwind */
+}

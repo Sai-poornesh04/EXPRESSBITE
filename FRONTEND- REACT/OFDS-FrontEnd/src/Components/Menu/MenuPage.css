@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Using Inter as specified */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+ 
+  .menu-page-container {
+    min-height: 100vh;
+    background-color: #f8f8f8; /* Light gray background */
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  /* Header Styles */
+  .menu-header {
+    background-color: #ffffff; /* White background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+ 
+  .back-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #6b7280; /* Gray text */
+    transition: color 0.3s ease;
+  }
+ 
+  .back-button:hover {
+    color: #f97316; /* Orange on hover */
+  }
+ 
+  .back-icon {
+    height: 24px;
+    width: 24px;
+  }
+ 
+  .menu-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f66111; /* Dark gray text */
+    margin: 0;
+    margin-top: 100px;
+  }
+ 
+  .header-placeholder {
+    width: 24px; /* Matches back-icon width for alignment */
+  }
+ 
+  /* Main Content Styles */
+  .menu-main-content {
+    max-width: 1200px;
+    margin: 32px auto;
+    padding: 0 16px;
+    flex-grow: 1; /* Allows main content to expand */
+  }
+ 
+  .menu-category-section {
+    margin-bottom: 40px;
+    background-color: #ffffff; /* White background */
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08); /* Soft shadow */
+  }
+ 
+  .menu-category-title {
+    font-size: 28px;
+    font-weight: 600;
+    color: #f97316; /* Orange color */
+    margin-bottom: 24px;
+    border-bottom: 2px solid #fdba74; /* Lighter orange border */
+    padding-bottom: 12px;
+  }
+ 
+  .menu-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column on small screens */
+    gap: 24px;
+  }
+ 
+  @media (min-width: 768px) { /* Medium screens */
+    .menu-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+ 
+  @media (min-width: 1024px) { /* Large screens */
+    .menu-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+ 
+  .menu-item-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb; /* Light gray border */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+ 
+  .menu-item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+ 
+  .menu-item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f2937; /* Darker gray text */
+    margin-bottom: 4px;
+  }
+ 
+  .menu-item-description {
+    font-size: 14px;
+    color: #6b7280; /* Medium gray text */
+    margin-bottom: 12px;
+  }
+ 
+  .menu-item-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  .menu-item-price {
+    font-size: 20px;
+    font-weight: 800;
+    color: #f97316; /* Orange color */
+  }
+ 
+  .add-to-cart-button {
+    background-color: #f97316; /* Orange background */
+    color: #ffffff; /* White text */
+    padding: 10px 16px;
+    border-radius: 9999px; /* Fully rounded */
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2); /* Orange shadow */
+  }
+ 
+  .add-to-cart-button:hover {
+    background-color: #e65c00; /* Darker orange on hover */
+    box-shadow: 0 4px 8px rgba(249, 115, 22, 0.3);
+  }
+ 
+  /* New: Inline quantity controls for items already in cart */
+  .item-quantity-controls {
+    display: flex;
+    align-items: center;
+    background-color: #f97316; /* Orange background */
+    border-radius: 9999px; /* Fully rounded */
+    padding: 5px; /* Adjust padding to make it compact */
+    box-shadow: 0 2px 4px rgba(249, 115, 22, 0.2);
+  }
+ 
+  .quantity-button-inline {
+    background-color: transparent; /* Transparent background */
+    color: #ffffff; /* White text */
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    width: 30px; /* Fixed width for consistent button size */
+    height: 30px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%; /* Make buttons circular */
+    transition: background-color 0.2s ease;
+  }
+ 
+  .quantity-button-inline:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slight white overlay on hover */
+  }
+ 
+  .item-quantity-display {
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 8px; /* Space between buttons and quantity */
+    min-width: 20px; /* Ensure enough space for numbers */
+    text-align: center;
+  }
+ 
+ 
+  /* Footer Styles */
+  .menu-footer {
+    background-color: #1f2937; /* Dark gray background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 16px 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: auto; /* Pushes footer to the bottom */
+  }
+ 
